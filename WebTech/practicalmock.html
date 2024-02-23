@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>practical Mock 1(HTML)</title>
+</head>
+<body>
+  <table width="10%" border="1px" style="background-color: rgb(76, 218, 161);"">
+    <form>
+    <th colspan= 2 style="background-color: yellow; color: red;"> Registration form
+    </th>
+    <tr>
+     <td ><label for="name">Enter name</label>
+    </td>
+    <td><input type="name" id="name"></td>
+    </tr>
+    <tr>
+      <td><label for="password">Enter password</label>
+      </td>
+      <td><input type="password" id="password"></td>
+    </tr>
+    <tr>
+      <td> <label for="address">Enter Address</label></td>
+       <td><textarea name="txt" id="address" cols="20" rows="6"></textarea></td></tr><tr>
+        <td><label for="vary">Select Games</label></td>
+          <td>
+            <input type="checkbox" id="hockey">
+            <label for="hockey">Hockey</label>
+            
+            <br>
+            <input type="checkbox" id="football">
+            <label for="football">Football</label><br>
+            <input type="checkbox" id="badminton">
+            <label for="badminton">Badminton</label><br>
+            <input type="checkbox" id="Cricket">
+            <label for="Cricket">Cricket</label><br>
+            <input type="checkbox" id="volleyball">
+            <label for="volleyball">Volleyball</label>
+          </td>
+        
+       </tr>
+       <tr>
+        <td>
+          <label for="gender">Gender</label> 
+
+        </td>
+        <td>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+
+        </td>
+       </tr>
+       <tr>
+        <td><label for="ageoptions">Select ur age</label></td><td><select name="" id="ageoptions">
+          <option value="" hidden>select </option>
+          <option >18</option>
+         <option >19</option>
+         <option >20</option>
+         <option >21</option>
+         <option >more than 21</option>
+         </td>
+       </tr>
+
+       <td>
+        <label for="photo">select photo</label>
+       </td>
+        <td><input type="file"></td>
+
+        <tr>
+          <td colspan= 2 align="center">
+             <button>Click Me</button></span>
+             <button type="reset">Reset </button>
+            <button type="submit">Submit Form</button>
+          </td>
+        </tr>
+    </form>
+  </table>
+</body>
+</html>

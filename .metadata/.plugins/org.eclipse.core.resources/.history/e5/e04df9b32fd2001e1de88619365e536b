@@ -1,0 +1,24 @@
+package programming_classes;
+
+import java.util.Scanner;
+
+public class Day3 {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter a number to run the program");
+	int n = sc.nextInt();
+	PrimeChecker(n);
+}
+// 16. WAJP to check whether the given number is prime number or not
+public static void PrimeChecker(int n) {
+	boolean isprime = true;
+	for (int i = 2; i < n/2; i++) {
+		if(n%i == 0)
+			isprime = false;
+		
+	}
+	if(isprime)
+		System.out.println(n+ " is a prime number");
+	else
+	}
+}
