@@ -10,12 +10,9 @@ public static void main(String[] args) {
 	primeChecker(n);
 	factorial(n);
 	
-	int init = sc.nextInt();
-	int fin = sc.nextInt();
-	primeChecker(n);
-	primeRange(init,fin);
-	compositeChecker(n);
-	compositeRange(init,fin);
+//	int init = sc.nextInt();
+//	int fin = sc.nextInt();
+//	primeRange(init,fin);
 }
 // 16. WAJP to check whether the given number is prime number or not
 public static void primeChecker(int n) {
@@ -54,46 +51,6 @@ public static void primeRange(int init, int fin) {
 			
 		}
 		if(isprime)
-			System.out.print(i + " ");
-	}
-	}
-//18. WAJP to check whether the given number is composite number or not
-public static void compositeChecker(int n) {
-	boolean iscomposite = true;
-	for (int i = 2; i < n/2; i++) {
-		if(n % i != 0)
-			iscomposite = false;
-		break;
-		
-	}
-	if(iscomposite)
-		System.out.println(n+ " is a composite number");
-	else
-		System.out.println(n+ " is not a composite number");
-	}
-//another method
-//public static boolean PrimeChecker(int n) { 
-//	boolean iscomposite = true;
-//	for (int i = 2; i < n/2; i++) {
-//		if(n % i == 0)
-//			iscomposite = false;
-//		break;
-//		
-//	}
-//	return iscomposite;
-//	}
-
-	// 	19. WAJP to list the composite numbers in given range.
-public static void compositeRange(int init, int fin) {
-	for (int i = init; i <= fin ; i++) {
-		boolean iscomposite = true;
-		for (int j = 2; j < i/2; j++) {
-			if(i % j != 0)
-				iscomposite = false;
-			break;
-			
-		}
-		if(iscomposite)
 			System.out.print(i + " ");
 	}
 	}
