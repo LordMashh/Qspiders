@@ -1,0 +1,12 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class EmployeeDriver {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the number of Emplyees");
+	int size = sc.nextInt();
+	
+}
+}

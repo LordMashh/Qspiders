@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+  }
+  
+  body {
+    width: 100vw;
+  }
+  
+  header {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(11, 182, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  header > h1 {
+    position: relative;
+    margin: 50px;
+    font-size: 100px;
+    bottom: 150px;
+    font-family: "sacramento", cursive;
+    color: rgb(246, 19, 189);
+    font-weight: 800;
+  }
+  
+  header > h1:hover {
+    color: rgb(47, 255, 5);
+  }
+  
+  header > h2 {
+    color: green;
+    margin: 50px;
+    font-size: 35px;
+    font-weight: 400;
+    bottom: 200px;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  header > img:nth-child(3) {
+    position: absolute;
+    right: 800px;
+    top: 250px;
+    width: 800px;
+    height: 500px;
+  }
+  
+  header > img:nth-child(4) {
+    position: absolute;
+    left: 750px;
+    top: 250px;
+    width: 800px;
+    height: 500px;
+  }
+  
+  .profile-block {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  .profile-block > i {
+    font-size: 100px;
+    border-radius: 100%;
+    background-color: lightcoral;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .profile-block > h2 {
+    font-family: "Raleway", sans-serif;
+    color: blue;
+  }
+  
+  .profile-block > p {
+    width: 50%;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  hr{
+    width: 100px;
+    border-top: 5px dotted;
+  }

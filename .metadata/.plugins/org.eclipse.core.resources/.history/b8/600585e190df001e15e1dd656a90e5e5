@@ -1,0 +1,78 @@
+package patterns;
+
+import java.util.Scanner;
+
+public class first {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter a number to print pattern");
+	int n = sc.nextInt();
+	char ch = 'A';
+	char ch2 = 'A';
+	char ch1 = 'a';
+	
+	// 1st pattern
+	System.out.println("1st pattern");
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if(j<=i) 
+				System.out.print("* ");				
+		}
+		System.out.println();
+	}
+	// 2nd pattern
+	System.out.println("2nd pattern");
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if(j<=i) {
+			
+			if(i % 2 == 0) {
+				System.out.print(ch + " ");		
+				ch ++;	
+			}
+			else {
+				System.out.print(ch1 + " ");
+				ch1++;
+			}
+			
+		}
+	}
+		System.out.println();
+	}
+	// 3nd pattern
+	System.out.println("3rd pattern");
+	for (int i = 0; i < n; i++) {
+		int k = 1 ;
+		for (int j = 0; j < n; j++) {
+			if(j<=i) 
+				System.out.print(k + " ");	
+			k++;
+		}
+		System.out.println();
+	}
+	// 3nd pattern
+		System.out.println("4th pattern");
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if(j<=i) {
+				
+				if(i % 2 == 0) {
+					System.out.print(ch2 + " ");		
+					ch2 ++;	
+				}
+				else {
+					System.out.print(ch2 - 65 + " ");
+					ch2++;
+				}
+				
+			}
+		}
+			System.out.println();
+		}
+
+
+
+
+}
+	
+}
