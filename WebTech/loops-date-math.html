@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+        window.onload = function() {
+            // Array for loop examples
+            var array = [1, 2, 3, 4, 5];
+   
+            
+            // map method
+            var squaredArray = array.map(function(item) {
+                return item * item;
+            });
+            console.log('map: ' + squaredArray);
+        
+            // filter method
+            var evenArray = array.filter(function(item) {
+                return item % 2 === 0;
+            });
+            console.log('filter: ' + evenArray);
+        
+            // reduce method
+            var sum = array.reduce(function(total, item) {
+                return total + item;
+            }, 0);
+            console.log('reduce: ' + sum);
+        
+            // find method
+            var firstEvenNumber = array.find(function(item) {
+                return item % 2 === 0;
+            });
+            console.log('find: ' + firstEvenNumber);
+        
+            // some method
+            var hasEvenNumber = array.some(function(item) {
+                return item % 2 === 0;
+            });
+            console.log('some: ' + hasEvenNumber);
+       
+            // forEach loop
+            array.forEach(function(item) {
+                console.log('forEach: ' + item);
+            });
+
+            // for...of loop
+            for (let item of array) {
+                console.log('for...of: ' + item);
+            }
+
+            // for...in loop
+            for (let index in array) {
+                console.log('for...in: ' + array[index]);
+            }
+
+
+            // Date properties and methods
+            var date = new Date();
+
+            // Get methods
+            console.log('Date: ' + date);
+            console.log('Year: ' + date.getFullYear());
+            console.log('Month: ' + (date.getMonth() + 1)); // Months are 0-based in JavaScript
+            console.log('Day of the month: ' + date.getDate());
+            console.log('Day of the week: ' + date.getDay()); // 0 (Sunday) to 6 (Saturday)
+            console.log('Hours: ' + date.getHours());
+            console.log('Minutes: ' + date.getMinutes());
+            console.log('Seconds: ' + date.getSeconds());
+            console.log('Milliseconds: ' + date.getMilliseconds());
+            console.log('Time: ' + date.getTime()); // The number of milliseconds since the Unix Epoch
+
+            // Math properties
+            console.log('Pi: ' + Math.PI);
+            console.log('Euler\'s number: ' + Math.E);
+            console.log('Natural logarithm of 2: ' + Math.LN2);
+            console.log('Natural logarithm of 10: ' + Math.LN10);
+            console.log('Base 2 logarithm of E: ' + Math.LOG2E);
+            console.log('Base 10 logarithm of E: ' + Math.LOG10E);
+            console.log('Square root of 1/2: ' + Math.SQRT1_2);
+            console.log('Square root of 2: ' + Math.SQRT2);
+            
+            // Math methods
+            console.log('Absolute value of -10: ' + Math.abs(-10));
+            console.log('Arc cosine of 0.5: ' + Math.acos(0.5));
+            console.log('Arc sine of 0.5: ' + Math.asin(0.5));
+            console.log('Arc tangent of 0.5: ' + Math.atan(0.5));
+            console.log('Arc tangent of y/x: ' + Math.atan2(10, 20));
+            console.log('Smallest integer greater than or equal to 4.7: ' + Math.ceil(4.7));
+            console.log('Cosine of 1: ' + Math.cos(1));
+            console.log('Hyperbolic cosine of 1: ' + Math.cosh(1));
+            console.log('Exponential function of 1: ' + Math.exp(1));
+            console.log('Largest integer less than or equal to 4.7: ' + Math.floor(4.7));
+            console.log('Natural logarithm of 10: ' + Math.log(10));
+            console.log('Base 10 logarithm of 100: ' + Math.log10(100));
+            console.log('Base 2 logarithm of 16: ' + Math.log2(16));
+            console.log('Maximum value among 1, 2, 3: ' + Math.max(1, 2, 3));
+            console.log('Minimum value among 1, 2, 3: ' + Math.min(1, 2, 3));
+            console.log('2 to the power of 3: ' + Math.pow(2, 3));
+            console.log('Random number between 0 and 1: ' + Math.random());
+            console.log('Round 4.7: ' + Math.round(4.7));
+            console.log('Sine of 1: ' + Math.sin(1));
+            console.log('Hyperbolic sine of 1: ' + Math.sinh(1));
+            console.log('Square root of 16: ' + Math.sqrt(16));
+            console.log('Tangent of 1: ' + Math.tan(1));
+            console.log('Hyperbolic tangent of 1: ' + Math.tanh(1));
+            console.log('Truncate 4.7: ' + Math.trunc(4.7));
+
+
+            // Alert box
+            alert("This is an alert box!");
+
+            // Confirm box
+            var userResponse = confirm("Do you agree?");
+            if (userResponse) {
+                console.log("User agreed.");
+            } else {
+                console.log("User disagreed.");
+            }
+
+            // Prompt box
+            var userName = prompt("Please enter your name", "Mayank Kushwaha");
+            if (userName != null) {
+                console.log("Hello " + userName + "! How are you today?");
+            }
+        }
+    </script>
+    </head>
+    <body>
+    </body>
+</html>

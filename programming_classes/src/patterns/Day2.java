@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter a number for run the program");
 	int n = sc.nextInt();
-1
+
 	System.out.println("1st pattern ------");
 	int n1 = 2;
 	char ch = 'a';

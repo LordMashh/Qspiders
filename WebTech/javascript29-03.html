@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1
+        let height = Number( prompt("Enter height for the area of rectangle"));
+        let width = Number( prompt("Enter width for the area of rectangle"));
+        var area = height * width;
+        console.log("The area of rectangle is " + area);
+        // 2  
+        let radius = Number( prompt("Enter radius for the volume of sphere"));
+        var volume = (4/3)*22.7*radius*radius*radius;
+        console.log("The volume of sphere is " + volume);
+        //3
+        let celsius = Number( prompt("Enter temperature for conversion"));
+        var fahrenheit = (9/5 * celsius) +32;
+        console.log("The conversion of celsius to fahrenheit is " + fahrenheit);
+        //4
+        let marks1 = Number( prompt("Enter marks of subject 1"));
+        let marks2 = Number( prompt("Enter marks of subject 2"));
+        let marks3 = Number( prompt("Enter marks of subject 3"));
+        let marks4 = Number( prompt("Enter marks of subject 4"));
+        let marks5 = Number( prompt("Enter marks of subject 5"));
+        let average  = (marks1 + marks2 + marks3 + marks4 + marks5)/5;
+        console.log("Average of 5 subjects marks is "+ average)
+        //5
+        let firstname = prompt("Enter your first name");
+        let lastname = prompt("Enter your last name");
+        console.log("Your full name is " + firstname + " " + lastname);
+
+    </script>
+</body>
+</html>

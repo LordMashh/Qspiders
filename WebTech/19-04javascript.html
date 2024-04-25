@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body {
+            margin:0;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+        }
+        .number{
+            margin: 10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        body.dark-theme {
+            background-color: black;
+            color: white;
+        }
+        .line{
+            margin: 20px;
+        }
+        #readmore{
+            display: none;
+        }
+        .readvala{
+            max-width: 1000px;
+        }
+        #less{
+            display: none;
+        }
+        #customize{
+            margin: 10px;
+        }
+        #section{
+          
+            background-color: aqua;
+            width: 850px;
+            height: 150px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #div{
+            background-color: blue;
+            width: 350px;
+            height: 50px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #btn{
+            background-color: red;
+            width: 150px;
+            height: 20px;
+        }
+        .line{
+            background-color: rgb(233, 100, 100);
+            width: 100%;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="line">---------------------1-------------------------</div>
+
+        <div class="incanddec">
+            <button id="increment">increment</button>
+            <div class="number">0</div>
+            <button id="decrement">decrement</button>
+        </div>
+        <div class="line">---------------------2-------------------------</div>
+
+        <button id="themeSwitch">Switch for change theme</button>
+
+        <div class="line">---------------------3-------------------------</div>
+
+        <div class="readvala">
+            <p class="seemoreandless">Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Ipsa dignissimos mollitia, incidunt tempore
+                suscipit harum voluptas eaque, architecto consectetur quae quod
+                vel earum quos amet exercitationem commodi dolorem impedit
+                asperiores iure totam! Libero dolor animi vel maiores
+                perferendis mollitia, molestiae illum, atque exercitationem quae
+                a, earum unde nam molestias. Ratione sit ut voluptates
+                aspernatur nostrum soluta provident atque nihil amet, iusto
+                laudantium laboriosam voluptatum doloribus quas at quod rerum ex
+                magnam blanditiis magni voluptatibus mollitia impedit harum! Sit
+                enim asperiores voluptatum facilis rem! Incidunt ut dicta maxime
+                consequatur fugiat hic, ullam quam aperiam impedit laborum ea,
+                architecto excepturi quis. At iure exercitationem, alias tempora
+                repellat recusandae doloremque dolores ipsum illo distinctio
+                natus. Deleniti voluptatem cumque praesentium. Tempora vel porro
+                unde molestias recusandae, odio quisquam?<span id="readmore">
+                    ...
+                    Ullam rem itaque laborum expedita qui soluta iste
+                    consequuntur exercitationem nostrum alias tempore natus
+                    magni quasi ad dolore et enim temporibus voluptates,
+                    corporis quis laudantium! Repellendus at harum recusandae
+                    obcaecati molestiae. Molestiae repellendus perspiciatis eum
+                    commodi eaque sit quia, accusamus distinctio soluta
+                    voluptates voluptatum natus itaque! Quod excepturi magnam
+                    earum pariatur, enim dolorum quas obcaecati debitis ratione,
+                    atque, voluptas odio dolores minima quos repellat nihil et
+                    aliquam natus in vero minus. Laboriosam molestias tempore
+                    veniam hic.</span></p>
+            <button
+                id="more">readmore...</button>
+            <button
+                id="less">readless...</button>
+        </div>
+        <div class="line">-----------------------4-----------------------</div>
+        <img id="myImage" src="./pic_bulboff.gif"
+            width="100" height="180">
+
+        <button id="bulbbutton">Click to turn on/off the light.</button>
+
+        <div class="line">-------------------------5---------------------</div>
+        <div>
+            <section id="section">
+                <div id="div">
+                    <button id="btn"></button>
+                </div>
+            </section>
+        </div>
+        <div class="line">----------------------6------------------------</div>
+        <div class="readvala">
+            <p class="custom-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Recusandae totam itaque ullam illum placeat dolore alias esse
+                inventore facilis fugiat soluta velit tempora distinctio dolorem
+                amet sequi, iusto eum! Blanditiis aliquam ut dolor, ipsam
+                assumenda iure aperiam, magni velit fugiat suscipit animi
+                provident vero! Minima nihil praesentium iste aliquid nobis nam
+                sit repudiandae obcaecati nesciunt quo corporis minus, fugit
+                quis ipsa, atque voluptatem molestias! Voluptates vero delectus
+                illo nemo autem eius perferendis optio odio nihil, tempore ipsa
+                voluptatem at sapiente deserunt officia architecto dolores
+                corporis! Necessitatibus tempora, dolor sapiente eaque a labore?
+                In voluptatum soluta sed. Iusto doloribus nam distinctio!</p>
+            <div>
+                select background color   <input type="color" class="bg-color" /> and select text
+                color <input type="color" class="txt-color"/>
+            </div>
+            <button id="customize">customize theme</button>
+        </div>
+        <div class="line">----------------------------------------------</div>
+
+        <script>
+    var number = document.querySelector('.number');
+    var increment = document.querySelector('#increment');
+    var decrement = document.querySelector('#decrement');
+    var themeSwitch = document.querySelector('#themeSwitch');
+    var more = document.querySelector('#more');
+    var less = document.querySelector('#less');
+    var readmore = document.querySelector('#readmore');
+    var seemoreandless = document.querySelector('.seemoreandless');
+    var bulbbutton = document.querySelector('#bulbbutton');
+    var image = document.getElementById('myImage');
+    var custom = document.querySelector('.custom-para');
+    var textcolor = document.querySelector('.txt-color');
+    var bgcolor = document.querySelector('.bg-color');
+    var customized = document.querySelector('#customize');
+    var section = document.querySelector('#section');
+    var div = document.querySelector('#div');
+    var btn = document.querySelector('#btn');
+
+    let on = true;
+
+    increment.addEventListener('click', function(){
+        number.innerHTML = parseInt(number.innerHTML) + 1;
+    });
+
+    decrement.addEventListener('click', function(){
+        number.innerHTML = parseInt(number.innerHTML) - 1;
+    });
+    var body = document.querySelector('body');
+
+    themeSwitch.addEventListener('click', function(){
+        body.classList.toggle('dark-theme');
+    });
+    
+    more.addEventListener('click', function(){
+      more.style.display = 'none';
+      less.style.display = 'block';
+      readmore.style.display = 'block';
+    });
+
+    less.addEventListener('click', function(){
+        less.style.display = 'none';
+        readmore.style.display = 'none';
+      });
+    
+    bulbbutton.addEventListener('click', () => {
+        if(on){
+            image.src = './pic_bulbon.gif';
+            on = false;
+        }else{
+            image.src = './pic_bulboff.gif';
+            on = true;
+        }
+    });
+
+    section.addEventListener('click', function(e){
+        console.log(e.target);
+        console.log("section");
+        e.stopPropagation();
+    });
+    btn.addEventListener('click', function(e){
+        console.log(e.target);
+        console.log("button");
+        e.stopPropagation();
+    });
+    div.addEventListener('click', function(e){
+        console.log(e.target);
+        console.log("div");
+        e.stopPropagation();
+    });
+
+    customized.addEventListener('click', function(){
+        custom.style.color = textcolor.value;
+        custom.style.backgroundColor = bgcolor.value;
+    });
+        
+    
+    
+</script>
+    </body>
+</html>

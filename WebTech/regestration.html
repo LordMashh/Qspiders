@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Created By CodingLab - www.codinglabweb.com -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to right top,
+          #27aadd,
+          #0099ed,
+          #0083f6,
+          #4d66f2,
+          #8d35dd
+        );
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      section {
+        height: 400px;
+        width: 500px;
+        background-color: whitesmoke;
+        padding: 20px;
+      }
+      .heading{
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+        .lines{
+            display: flex;
+          
+            justify-content: space-between;
+        }
+        .updown{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        label{
+            margin-bottom: 10px;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="heading" >Registration</div>
+      <div class="lines">
+        <div class="updown">
+            <label for="name" class="tag"> full Name</label>
+            <input type="text" placeholder="Enter your name " id="name" />
+        </div>
+        <div class="updown">
+            <label for="username">username</label>
+            <input type="text" placeholder="Enter your username" id="username" />
+        </div>
+      </div>
+      <div class="lines">
+        <div class="updown">
+            <label for="Email" class="tag">Email</label>
+            <input type="text" placeholder="Enter your email" id="Email" />
+        </div>
+        <div class="updown">
+            <label for="Phone">Phone Number</label>
+            <input type="text" placeholder="Enter your number" id="Phone" />
+        </div>
+      </div>
+      <div class="lines">
+        <div class="updown">
+            <label for="password" class="tag">password</label>
+            <input type="text" placeholder="Enter your password" id="password" />
+        </div>
+        <div class="updown">
+            <label for="Confirm password"  >Confirm password</label>
+            <input type="text" placeholder="confirm your password" id="Confirm password" />
+        </div>
+      </div>
+      
+    </section>
+  </body>
+</html>

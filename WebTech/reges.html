@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Document </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #0493f3, #4b0666);
+        }
+
+        .content {
+            max-width: 700px;
+            width: 100%;
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+
+        .content .heading {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+
+
+        .content form .details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+
+        form .details .input-box {
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+
+        form .input-box span.details {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .details .input-box input {
+            height: 40px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 4px;
+            padding-left: 15px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+        }
+
+    
+        form .gender-details .gender-heading {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        form .genderlist {
+            display: flex;
+            width: 80%;
+            margin: 14px 0;
+            justify-content: space-between;
+        }
+
+        form .genderlist label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        form .genderlist label .dot {
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background: #d9d9d9;
+            border: 5px solid transparent;
+        }
+
+
+        form .button {
+            height: 45px;
+            margin: 35px 0
+        }
+
+        form .button input {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #0493f3, #4b0666);
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="heading">Registration</div>
+        <div class="content">
+            <form >
+                <div class="details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter your password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="text" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-heading">Gender</span>
+                    <div class="genderlist">
+                        <label for="dot1">
+                            <span class="dot"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot2">
+                            <span class="dot"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot3">
+                            <span class="dot"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
